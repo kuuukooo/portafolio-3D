@@ -1,22 +1,20 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
+import TitleHeader from '../components/TitleHeader'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
+import { projectData } from '../constants/index'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const ShowcaseSection = () => {
   const sectionRef = useRef(null)
-  const project1Ref = useRef(null)
-  const project2Ref = useRef(null)
-  const project3Ref = useRef(null)
-
-
+  const projectRefs = useRef([])
 
   useGSAP(() => {
-    const projects = [project1Ref.current, project2Ref.current, project3Ref.current]
-
-    projects.forEach((card, index) => {
+    projectRefs.current.forEach((card, index) => {
       gsap.fromTo(
         card,
         { y: 50, opacity: 0 },
@@ -38,39 +36,41 @@ const ShowcaseSection = () => {
       { opacity: 1, duration: 1.5 }
     )
   }, [])
+
   return (
     <section ref={sectionRef} id='work' className='app-showcase'>
       <div className='w-full'>
-        <div className='showcaselayout'>
-          {/* Parte de la izquierda */}
-          <div className='first-project-wrapper' ref={project1Ref}>
-            <div className='image-wrapper'>
-              <img src='/images/tienda-mern.png' alt='' />
-            </div>
-            <div className='text-content'>
-              <h2>Tienda con Stack MERN</h2>
-              <p className='text-white-50 md:text-xl'>
-                Una tienda online construida con MongoDB, Express, React y Node.js. Es un prototipo de una tienda que permite a los usuarios navegar por productos, agregarlos al carrito y realizar pedidos.
-              </p>
-            </div>
-          </div>
-
-          {/* Parte de la derecha */}
-          <div className='project-list-wrapper overflow-hidden'>
-            <div className='project' ref={project2Ref}>
-              <div className='image-wrapper bg-[#ffefdb]'>
-                <img src='/images/kukocraft.png' alt='Clon de Minecraft' />
+        <TitleHeader title='Trabajos' sub='Algunos de mis trabajos más destacados 🤓' />
+        <div className='showcaselayout mt-8 grid md:grid-cols-2'>
+          {projectData.map((project, idx) => (
+            <div
+              key={project.id}
+              ref={el => (projectRefs.current[idx] = el)}
+              className='project-card flex flex-col rounded-4xl shadow-lg overflow-hidden'
+            >
+              <div className='image-wrapper'>
+                <img src={project.img} alt={project.alt} className='w-full object-cover rounded-2xl' />
               </div>
-              <h2>Clon de Minecraft con React y Three.js</h2>
-            </div>
-
-            <div className='project' ref={project3Ref}>
-              <div className='image-wrapper bg-[#ffefdb]'>
-                <img src='/images/project3.png' alt='YC Directory' />
+              <div className='p-4 flex-1 flex flex-col'>
+                <div className='mb-2 flex space-x-4 text-gray-400'>
+                  <a href={project.links.repo} target='_blank' rel='noopener noreferrer' className='flex items-center space-x-1 text-3xl md:text-xl hover:text-white transition'>
+                    <FaGithub />
+                    <span className='text-sm md:text-xs'>Repositorio</span>
+                  </a>
+                  <a href={project.links.post} target='_blank' rel='noopener noreferrer' className='flex items-center space-x-1 text-3xl md:text-xl hover:text-white transition'>
+                    <FaLinkedin />
+                    <span className='text-sm md:text-xs'>Post de LinkedIn</span>
+                  </a>
+                  <a href={project.links.live} target='_blank' rel='noopener noreferrer' className='flex items-center space-x-1 text-3xl md:text-xl hover:text-white transition'>
+                    <FiExternalLink />
+                    <span className='text-sm md:text-xs'>Ver proyecto</span>
+                  </a>
+                </div>
+                <h2 className='text-xl font-semibold mb-2'>{project.title}</h2>
+                {project.desc && <p className='text-white-50 md:text-lg flex-1'>{project.desc}</p>}
               </div>
-              <h2>YC Directory - Startup Showcase app</h2>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

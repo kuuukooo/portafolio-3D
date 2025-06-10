@@ -136,6 +136,57 @@ const socialImgs = [
   },
 ];
 
+const projectData = [
+  {
+    id: 1,
+    img: "/images/proyecto1.png",
+    alt: "Tienda MERN",
+    title: "Tienda con Stack MERN",
+    desc: "Una tienda online construida con MongoDB, Express, React y Node.js. Es un prototipo de una tienda que permite a los usuarios navegar por productos, agregarlos al carrito y realizar pedidos.",
+    links: {
+      repo: "https://github.com/usuario/tienda-mern",
+      post: "www.linkedin.com/in/josé-ramírez-b74256265",
+      live: "https://tienda-mern-kuko.netlify.app/",
+    },
+  },
+  {
+    id: 2,
+    img: "/images/proyecto2.png",
+    alt: "Clon de Minecraft",
+    title: "Clon de Minecraft con React y Three.js",
+    desc: "Un clon de Minecraft para la web con React y Three.js. Permite a los usuarios interactuar con bloques del juego, construir estructuras y otras funciones básicas del juego.",
+    links: {
+      repo: "https://github.com/usuario/kukocraft",
+      post: "https://linkedin.com/posts/usuario_kukocraft",
+      live: "https://kukocraft.netlify.app/",
+    },
+  },
+  {
+    id: 3,
+    img: "/images/proyecto3.png",
+    alt: "Diario de Viajes",
+    title: "Diario de Viajes en Paraguay",
+    desc: "Un diario de viajes a tener en cuenta para viajar por el País. Incluye información sobre lugares turísticos, gastronomía y cultura paraguaya.",
+    links: {
+      repo: "https://github.com/kuuukooo/viajesParaguay",
+      post: "https://www.linkedin.com/posts/jos%C3%A9-ram%C3%ADrez-b74256265_hola-a-todos-acabo-de-completar-mi-tercer-activity-7229517865626828800-1edJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAED_rAgB1HBfglGYehrtPUXWfXrF2HAZ_Y0",
+      live: "https://viajesparaguay.netlify.app/",
+    },
+  },
+  {
+    id: 4,
+    img: "/images/proyecto4.png",
+    alt: "Juego de Dieces",
+    title: "Juego de Dieces",
+    desc: "Un juego de dados clásico desarrollado con React. Permite a los usuarios jugar al juego de Dieces, donde pueden lanzar dados y acumular puntos.",
+    links: {
+      repo: "https://github.com/kuuukooo/tenziesjuego",
+      post: "https://www.linkedin.com/posts/jos%C3%A9-ram%C3%ADrez-b74256265_reactjs-webdevelopment-gamedev-activity-7238973624156606464-v77M?utm_source=share&utm_medium=member_desktop&rcm=ACoAAED_rAgB1HBfglGYehrtPUXWfXrF2HAZ_Y0",
+      live: "https://diecesjuegoreact.netlify.app/",
+    },
+  },
+];
+
 export {
   words,
   abilities,
@@ -144,4 +195,5 @@ export {
   socialImgs,
   techStackImgs,
   navLinks,
+  projectData,
 };

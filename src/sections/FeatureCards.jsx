@@ -1,4 +1,3 @@
-import React from 'react'
 import { abilities } from '../constants'
 import TitleHeader from '../components/TitleHeader'
 
