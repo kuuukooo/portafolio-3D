@@ -1,12 +1,10 @@
-import React from 'react'
+import React, { Suspense, useState, useEffect, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Html, useProgress } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
-import { Room } from './Room'
+import Cat from './Cat'
+import Room from './Room'
 import HeroLights from './HeroLights'
-import { Cat } from './Cat'
-import { Suspense, useState, useEffect, useRef } from 'react'
-
 // Loader component to show loading progress
 function Loader() {
   const { progress } = useProgress()

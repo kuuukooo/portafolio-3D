@@ -1,10 +1,21 @@
+// src/components/HeroModels/Cat.jsx
 import * as THREE from 'three'
 import React, { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 
-export function Cat(props) {
+function Cat(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/oiiaioooooiai_cat.glb')
+
+  // Hook useGLTF con configuración de Draco
+  const { nodes, materials, animations } = useGLTF(
+    '/models/oiiaioooooiai_cat_draco.glb',
+    (loader) => {
+      const dracoLoader = new DRACOLoader()
+      dracoLoader.setDecoderPath('/draco/')  // ./public/draco/
+      loader.setDRACOLoader(dracoLoader)
+    }
+  )
   const { actions } = useAnimations(animations, group)
 
   useEffect(() => {
@@ -47,4 +58,14 @@ export function Cat(props) {
   )
 }
 
-useGLTF.preload('/models/oiiaioooooiai_cat.glb')
+// Preload con Draco
+useGLTF.preload(
+  '/models/oiiaioooooiai_cat_draco.glb',
+  (loader) => {
+    const dracoLoader = new DRACOLoader()
+    dracoLoader.setDecoderPath('/draco/')
+    loader.setDRACOLoader(dracoLoader)
+  }
+)
+
+export default React.memo(Cat)
