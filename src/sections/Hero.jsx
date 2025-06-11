@@ -1,7 +1,8 @@
+import { lazy, Suspense } from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { words } from "../constants";
-import HeroExperience from "../components/HeroModels/HeroExperience";
+const HeroExperience = lazy(() => import('../components/HeroModels/HeroExperience'))
 
 const Hero = () => {
   const Edad = new Date().getFullYear() - 2004 - (new Date().getMonth() < 7 || (new Date().getMonth() === 7 && new Date().getDate() < 3) ? 1 : 0)
@@ -18,7 +19,7 @@ const Hero = () => {
     <section id="hero" className="relative overflow-hidden">
       {/* Fondo */}
       <div className="absolute top-0 left-0 z-10">
-        <img src="/images/bg.png" alt="" />
+        <img src="/images/bg.webp" alt="" />
       </div>
 
       {/* Contenedor principal: columna en móvil, fila en desktop */}
@@ -39,6 +40,8 @@ const Hero = () => {
                         <img
                           src={word.imgPath}
                           alt="person"
+                          loading="lazy"
+                          decoding="async"
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
                         <span>{word.text}</span>
@@ -50,9 +53,8 @@ const Hero = () => {
               <h1>En proyectos Reales</h1>
             </div>
 
-            {/* Párrafos: texto normal en móvil (sin justificar), justificado en desktop */}
             <p className="text-white-50 md:text-xl md:text-justify relative z-10 pointer-events-none">
-              Buenas, Soy José Ramírez, un desarrollador Front-End de Luque, Paraguay.
+              Buenas, Soy José Ramírez, un desarrollador JR Front-End de Luque, Paraguay.
             </p>
             <p className="text-white-50 md:text-xl md:text-justify relative z-10 pointer-events-none">
               Actualmente tengo <strong>{Edad} años</strong> y estoy en el tercer año de

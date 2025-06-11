@@ -5,12 +5,20 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    let timeout = null
+    const onScroll = () => {
+      if (timeout) clearTimeout(timeout)
+      timeout = setTimeout(() => {
+        setScrolled(window.scrollY > 0)
+      }, 50) // sólo cada 50ms
+    }
+
+    window.addEventListener('scroll', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      if (timeout) clearTimeout(timeout)
+    }
+  }, [])
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>

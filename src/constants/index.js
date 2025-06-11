@@ -45,23 +45,28 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/images/logos/react.webp",
+    link: "https://react.dev/",
   },
   {
     name: "TypeScript",
-    imgPath: "/images/logos/ts-logo-128.png",
+    imgPath: "/images/logos/ts-logo-128.webp",
+    link: "https://www.typescriptlang.org/",
   },
   {
     name: "Node.js",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/node.webp",
+    link: "https://nodejs.org/",
   },
   {
     name: "Tailwind CSS",
-    imgPath: "/images/logos/tailwind-logo.png",
+    imgPath: "/images/logos/tailwind-logo.webp",
+    link: "https://tailwindcss.com/",
   },
   {
     name: "Git",
     imgPath: "/images/logos/git.svg",
+    link: "https://git-scm.com/",
   },
 ];
 

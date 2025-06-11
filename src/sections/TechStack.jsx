@@ -1,52 +1,64 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import TitleHeader from "../components/TitleHeader";
-import { techStackImgs } from "../constants";
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import TitleHeader from '../components/TitleHeader'
+import { techStackImgs } from '../constants'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const TechStack = () => {
-  useGSAP(() => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      ScrollTrigger.batch('.tech-card', {
+        interval: 0.2,
+        batchMax: 6,
+        start: 'top 80%',
+        onEnter: batch => {
+          gsap.to(batch, {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power2.inOut',
+            stagger: 0.1
+          })
+        }
+      })
+    })
 
-    gsap.fromTo(
-      ".tech-card",
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-
-        y: 0,
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: "#skills",
-          start: "top center",
-        },
-      }
-    );
-  });
+    return () => ctx.revert()
+  }, [])
 
   return (
-    <div id="skills" className="flex-center section-padding">
+    <div
+      id="skills"
+      className="flex-center section-padding"
+    >
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Habilidades"
           sub="Algunas tecnologías que manejo 👨‍💻"
         />
+
         <div className="tech-grid">
-          {techStackImgs.map((techStackIcon, index) => (
+          {techStackImgs.map(({ imgPath, name, link }, i) => (
             <div
-              key={index}
+              key={i}
               className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              style={{ transform: 'translateY(50px)', opacity: 0 }}
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
                 <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
+                  <img
+                    src={imgPath}
+                    alt={name}
+                    loading="lazy"
+                    decoding="async"
+                    onClick={() => window.open(link, '_blank')}
+                  />
                 </div>
                 <div className="padding-x w-full">
-                  <p>{techStackIcon.name}</p>
+                  <p>{name}</p>
                 </div>
               </div>
             </div>
@@ -54,7 +66,7 @@ const TechStack = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TechStack;
+export default TechStack

@@ -1,25 +1,31 @@
-import Navbar from './components/Navbar.jsx'
-import Contact from './sections/Contact.jsx'
-import ExperienceSection from './sections/ExperienceSection.jsx'
-import FeatureCards from './sections/FeatureCards.jsx'
-import Footer from './sections/Footer.jsx'
-import Hero from './sections/Hero.jsx'
-import ShowcaseSection from './sections/ShowcaseSection.jsx'
-import TechStack from './sections/TechStack.jsx'
+import { Suspense, lazy } from 'react'
+import Navbar from './components/Navbar'
+import Contact from './sections/Contact'
+import FeatureCards from './sections/FeatureCards'
+import Footer from './sections/Footer'
+import TechStack from './sections/TechStack'
+// Lazy load
+const Hero = lazy(() => import('./sections/Hero'))
+const ShowcaseSection = lazy(() => import('./sections/ShowcaseSection'))
+const ExperienceSection = lazy(() => import('./sections/ExperienceSection'))
 
-const App = () => {
-  return (
-    <>
-      <Navbar />
+const App = () => (
+  <>
+    <Navbar />
+
+    <Suspense fallback={<div className="h-screen flex items-center justify-center">Cargando…</div>}>
       <Hero />
+    </Suspense>
+
+    <Suspense fallback={null}>
       <ShowcaseSection />
       <FeatureCards />
       <ExperienceSection />
       <TechStack />
       <Contact />
       <Footer />
-    </>
-  )
-}
+    </Suspense>
+  </>
+)
 
 export default App
