@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next'
 
 const langs = [
   { code: 'en', label: 'English', flag: '🇺🇸' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' }
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'br', label: 'Português', flag: '🇧🇷' },
+  { code: 'py', label: 'Guaraní', flag: '🇵🇾' },
 ]
 
 export default function Translate() {
@@ -37,7 +39,7 @@ export default function Translate() {
       >
         <span className="text-2xl pointer-events-none">{current.flag}</span>
       </button>
-      
+
       {open && (
         <ul className="absolute bottom-16 right-0 w-40 bg-[#0e0e10] text-[#d9ecff] border border-gray-600
                        rounded-md shadow-lg overflow-hidden animate-in fade-in-0 slide-in-from-bottom-2 duration-200">
