@@ -407,7 +407,7 @@ const locales = {
         creating: "Ajapo hína",
         inRealProjects: "Tembiapo añetépe",
         intro:
-          "Maitei, che José Ramírez, che ha'e peteĩ mboguataháva JR Front‑End Luque-gua, Paraguai-gua.",
+          "Mba'eichapa lo mitã, che rera José Ramírez, che ha'e peteĩ mboguataháva JR Front‑End Luque-gua, Paraguai-gua.",
         age: "Ko'ágã aguereko {{edad}} ary ha aime mbohapy ary Ingeniería en Informática Universidad Americana-pe.",
         words: [
           { text: "Jehepy", imgPath: "/images/ideas.svg" },
