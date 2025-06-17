@@ -4,6 +4,7 @@ import Contact from './sections/Contact'
 import FeatureCards from './sections/FeatureCards'
 import Footer from './sections/Footer'
 import TechStack from './sections/TechStack'
+import Translate from './components/Translate'
 // Lazy load
 const Hero = lazy(() => import('./sections/Hero'))
 const ShowcaseSection = lazy(() => import('./sections/ShowcaseSection'))
@@ -13,7 +14,7 @@ const App = () => (
   <>
     <Navbar />
 
-    <Suspense fallback={<div className="h-screen flex items-center justify-center">Cargando…</div>}>
+    <Suspense fallback={<div className="h-screen flex items-center justify-center">⏳</div>}>
       <Hero />
     </Suspense>
 
@@ -25,6 +26,7 @@ const App = () => (
       <Contact />
       <Footer />
     </Suspense>
+    <Translate />
   </>
 )
 

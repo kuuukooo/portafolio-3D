@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
+import { useTranslation } from 'react-i18next'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import TitleHeader from '../components/TitleHeader'
 import { techStackImgs } from '../constants'
@@ -7,6 +8,9 @@ import { techStackImgs } from '../constants'
 gsap.registerPlugin(ScrollTrigger)
 
 const TechStack = () => {
+  const { t } = useTranslation()
+  const tech = t('techstack', { returnObjects: true })
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.batch('.tech-card', {
@@ -35,8 +39,8 @@ const TechStack = () => {
     >
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Habilidades"
-          sub="Algunas tecnologías que manejo 👨‍💻"
+          title={tech.title}
+          sub={tech.sub}
         />
 
         <div className="tech-grid">

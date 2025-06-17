@@ -1,8 +1,11 @@
+// src/components/Contact.jsx
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 import TitleHeader from "../components/TitleHeader";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
@@ -27,7 +30,6 @@ const Contact = () => {
         formRef.current,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
-
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Error al enviar el correo:", error);
@@ -36,12 +38,15 @@ const Contact = () => {
     }
   };
 
+  // Objeto de traducciones de esta sección
+  const c = t("contact", { returnObjects: true });
+
   return (
     <section id="contact" className="flex-center section-padding">
       <div className="w-full max-w-3xl">
         <TitleHeader
-          title="Contacto"
-          sub="💬 ¿Tienes preguntas o ideas? ¡Hablemos! 🚀"
+          title={c.title}
+          sub={c.sub}
         />
 
         <div className="mt-16 flex justify-center">
@@ -53,7 +58,7 @@ const Contact = () => {
             >
               <div>
                 <label htmlFor="name" className="block mb-2 font-medium">
-                  Tu nombre
+                  {c.form.nameLabel}
                 </label>
                 <input
                   type="text"
@@ -61,7 +66,7 @@ const Contact = () => {
                   name="name"
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="¿Cuál es tu nombre?"
+                  placeholder={c.form.namePlaceholder}
                   required
                   className="w-full p-3 rounded-md border border-gray-300"
                 />
@@ -69,7 +74,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="email" className="block mb-2 font-medium">
-                  Tu Email
+                  {c.form.emailLabel}
                 </label>
                 <input
                   type="email"
@@ -77,7 +82,7 @@ const Contact = () => {
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="¿Cuál es tu dirección de correo?"
+                  placeholder={c.form.emailPlaceholder}
                   required
                   className="w-full p-3 rounded-md border border-gray-300"
                 />
@@ -85,14 +90,14 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block mb-2 font-medium">
-                  Tu Mensaje
+                  {c.form.messageLabel}
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="¿Cómo puedo ayudarte?"
+                  placeholder={c.form.messagePlaceholder}
                   rows="5"
                   required
                   className="w-full p-3 rounded-md border border-gray-300"
@@ -103,7 +108,7 @@ const Contact = () => {
                 <div className="cta-button group">
                   <div className="bg-circle" />
                   <p className="text">
-                    {loading ? "Enviando..." : "Enviar mensaje"}
+                    {loading ? c.form.sending : c.form.send}
                   </p>
                   <div className="arrow-wrapper">
                     <img src="/images/arrow-down.svg" alt="arrow" />

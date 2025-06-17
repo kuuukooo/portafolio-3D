@@ -27,7 +27,6 @@ const GlowCard = ({ card, index, children }) => {
       <div className='glow'></div>
       <div className='flex items-center gap-1 mb-5'>
         <p className='text-white-50 md:text-xl'>
-          Nota ☝️
         </p>
       </div>
       <div className='mb-5'>

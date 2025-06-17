@@ -1,11 +1,14 @@
 import { lazy, Suspense } from 'react'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { words } from "../constants";
+import { useTranslation } from 'react-i18next';
 const HeroExperience = lazy(() => import('../components/HeroModels/HeroExperience'))
 
 const Hero = () => {
+  const { t } = useTranslation();
   const Edad = new Date().getFullYear() - 2004 - (new Date().getMonth() < 7 || (new Date().getMonth() === 7 && new Date().getDate() < 3) ? 1 : 0)
+
+  const words = t('hero.words', { returnObjects: true });
 
   useGSAP(() => {
     gsap.fromTo(
@@ -29,36 +32,35 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Creando
+                {t('hero.creating')}
                 <span className="slide">
                   <span className="wrapper">
-                    {words.map((word, index) => (
+                    {words.map(({ text, imgPath }, index) => (
                       <span
                         key={index}
                         className="flex items-center md:gap-3 gap-1 pb-2"
                       >
                         <img
-                          src={word.imgPath}
-                          alt="person"
+                          src={imgPath}
+                          alt={text}
                           loading="lazy"
                           decoding="async"
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
                         />
-                        <span>{word.text}</span>
+                        <span>{text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
               </h1>
-              <h1>En proyectos Reales</h1>
+              <h1>{t('hero.inRealProjects')}</h1>
             </div>
 
             <p className="text-white-50 md:text-xl md:text-justify relative z-10 pointer-events-none">
-              Buenas, Soy José Ramírez, un desarrollador JR Front-End de Luque, Paraguay.
+              {t('hero.intro')}
             </p>
             <p className="text-white-50 md:text-xl md:text-justify relative z-10 pointer-events-none">
-              Actualmente tengo <strong>{Edad} años</strong> y estoy en el tercer año de
-              la carrera de Ingeniería en Informática en la Universidad Americana.
+              {t('hero.age', { edad: Edad })}
             </p>
           </div>
         </header>

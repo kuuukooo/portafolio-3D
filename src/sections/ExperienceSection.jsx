@@ -1,14 +1,27 @@
-import gsap from 'gsap'
+import { gsap } from 'gsap'
+import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
-import { expCards } from '../constants'
+import { expCardsStatic } from '../constants'
+import { useTranslation } from 'react-i18next'
 import TitleHeader from '../components/TitleHeader'
 import GlowCard from '../components/GlowCard'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
+  const { t } = useTranslation()
+  const sectionRef = useRef(null)
+  const projectRefs = useRef([])
+
+  const exp = t('experience', { returnObjects: true })
+  const cards = expCardsStatic.map(({ key, imgPath, logoPath }) => ({
+    key,
+    imgPath,
+    logoPath,
+    ...exp.cards[key]
+  }))
+
   useGSAP(() => {
     gsap.utils.toArray('.timeline-card').forEach((card) => {
       gsap.from(card, {
@@ -57,16 +70,17 @@ const ExperienceSection = () => {
     <section
       id='experience'
       className='flex-center md:mt-40 mt-20 section-padding xl:px-0'
+      ref={sectionRef}
     >
       <div className='w-full h-full md:px-20 px-5'>
         <TitleHeader
-          title='Experiencia Profesional'
-          sub='Una vista a mi trayectoria 🤓'
+          title={exp.title}
+          sub={exp.sub}
         />
         <div className='mt-32 relative'>
           <div className='relative z-50 xl:space-y-32 space-y-10'>
-            {expCards.map((card) => (
-              <div key={card.title} className='exp-card-wrapper'>
+            {cards.map((card, idx) => (
+              <div key={card.key} className='exp-card-wrapper' ref={el => projectRefs.current[idx] = el}>
                 <div className='xl:w-2/6'>
                   <GlowCard card={card}>
                     <div>
@@ -86,23 +100,13 @@ const ExperienceSection = () => {
                       </div>
                       <div>
                         <h1 className='font-semibold text-3xl'>{card.title}</h1>
-                        <p className='my-5 text-white-50'>
-                          🏛️&nbsp;{card.company}
-                        </p>
-                        <p className='my-5 text-white-50'>
-                          🗓️&nbsp;{card.date}
-                        </p>
-                        <p className='text-[#839CB5] italic'>
-                          Responsabilidades
-                        </p>
+                        <p className='my-5 text-white-50'>🏛️&nbsp;{card.company}</p>
+                        <p className='my-5 text-white-50'>🗓️&nbsp;{card.date}</p>
+                        <p className='text-[#839CB5] italic'>{card.respon}</p>
                         <ul className='list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50'>
-                          {card.responsibilities.map(
-                            (responsibility, index) => (
-                              <li key={index} className='text-lg'>
-                                {responsibility}
-                              </li>
-                            )
-                          )}
+                          {card.responsibilities.map((res, i) => (
+                            <li key={i} className='text-lg'>{res}</li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -114,7 +118,7 @@ const ExperienceSection = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default ExperienceSection;

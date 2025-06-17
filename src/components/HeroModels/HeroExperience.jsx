@@ -1,4 +1,5 @@
 import React, { Suspense, useState, useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Html, useProgress } from '@react-three/drei'
 import { useMediaQuery } from 'react-responsive'
@@ -7,11 +8,13 @@ import Room from './Room'
 import HeroLights from './HeroLights'
 // Loader component to show loading progress
 function Loader() {
+  const { t } = useTranslation()
+  const loading = t('loading3d', { returnObjects: true })
   const { progress } = useProgress()
   return (
     <Html center>
       <div className="bg-black bg-opacity-75 text-white px-4 py-2 rounded">
-        Cargando Modelo 3D... {progress.toFixed(0)}%
+        {loading.title} {progress.toFixed(0)}%
       </div>
     </Html>
   )
