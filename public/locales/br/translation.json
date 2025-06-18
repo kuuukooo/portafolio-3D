@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "work": "Trabalhos",
+    "qualities": "Qualidades",
+    "experience": "Experiência",
+    "skills": "Habilidades",
+    "aboutme": "Sobre mim"
+  },
+  "contactBtn": "Entre em contato",
+  "loading3d": {
+    "title": "Carregando Modelo 3D..."
+  },
+  "hero": {
+    "creating": "Criando",
+    "inRealProjects": "Em projetos Reais",
+    "intro": "Olá, sou José Ramírez, um desenvolvedor JR Front‑End de Luque, Paraguai.",
+    "age": "Atualmente tenho {{edad}} anos e estou no terceiro ano do curso de Engenharia em Informática na Universidade Americana.",
+    "words": [
+      {
+        "text": "Ideias",
+        "imgPath": "/images/ideas.svg"
+      },
+      {
+        "text": "Conceitos",
+        "imgPath": "/images/concepts.svg"
+      },
+      {
+        "text": "Designs",
+        "imgPath": "/images/designs.svg"
+      },
+      {
+        "text": "Código",
+        "imgPath": "/images/code.svg"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Trabalhos",
+    "sub": "Alguns dos meus trabalhos mais destacados 🤓",
+    "projectRepo": "Repositório",
+    "projectPost": "Post do LinkedIn",
+    "projectLive": "Ver projeto",
+    "projects": [
+      {
+        "alt": "Loja MERN",
+        "title": "Loja com Stack MERN",
+        "desc": "Uma loja online construída com MongoDB, Express, React e Node.js. É um protótipo onde os usuários podem navegar produtos, adicionar ao carrinho e realizar pedidos."
+      },
+      {
+        "alt": "Clone do Minecraft",
+        "title": "Clone do Minecraft com React e Three.js",
+        "desc": "Um clone do Minecraft para a web com React e Three.js. Permite interagir com blocos, construir estruturas e desfrutar de funções básicas do jogo."
+      },
+      {
+        "alt": "Diário de Viagens",
+        "title": "Diário de Viagens no Paraguai",
+        "desc": "Um diário de viagens pelo Paraguai que inclui informações sobre lugares turísticos, gastronomia e cultura do país."
+      },
+      {
+        "alt": "Jogo de Dados",
+        "title": "Jogo de Dados",
+        "desc": "Um jogo de dados clássico desenvolvido com React. Permite lançar dados e acumular pontos neste divertido jogo de Tenzies."
+      }
+    ]
+  },
+  "featureCards": {
+    "title": "Qualidades",
+    "sub": "Coisas que me destacam 🔋",
+    "abilities": {
+      "fastLearning": {
+        "title": "Aprendizado Rápido",
+        "desc": "Me considero alguém que aprende rapidamente, adaptando-me a novas tecnologias e ferramentas."
+      },
+      "flexibility": {
+        "title": "Flexibilidade e Adaptabilidade",
+        "desc": "Estou aberto a me adaptar a diferentes ambientes e absorver ideias ou abordagens novas."
+      },
+      "clearCommunication": {
+        "title": "Comunicação Clara",
+        "desc": "Sou assertivo e capaz de escutar ativamente, aberto a receber críticas construtivas e sugestões."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "sub": "Uma visão da minha trajetória 🤓",
+    "respon": "Responsabilidades",
+    "cards": {
+      "itIntern": {
+        "respon": "Responsabilidades",
+        "review": "Além das atividades técnicas, adquiri habilidades no uso do Microsoft Office, aprendi metodologias de trabalho colaborativo, melhorei minha capacidade de organização de projetos e desenvolvi a diligência necessária para cumprir com as tarefas designadas.",
+        "title": "Estagiário de TI",
+        "company": "Centro Educativo San Sebastián",
+        "date": "Fevereiro 2022 - Junho 2022",
+        "responsibilities": [
+          "Aprendi comandos de Linux Bash e Powershell.",
+          "Instalei, reparei e configurei computadores Desktop.",
+          "Colaborei em equipe para resolver problemas técnicos.",
+          "Melhorei a organização e planejamento de projetos.",
+          "Realizei a manutenção de cabos RJ45 e conectores.",
+          "Desenvolvi e aprofundei minhas habilidades interpessoais."
+        ]
+      },
+      "frontendApprentice": {
+        "respon": "Responsabilidades",
+        "review": "Durante meu papel como Aprendiz de Front-End, aprofundei nas bases da lógica de programação, adquiri habilidades de trabalho com bases de dados e compreendi como se desenvolve software em um ambiente real, colaborando estreitamente com a equipe para entregar soluções funcionais e escaláveis.",
+        "title": "Aprendiz de Front-End",
+        "company": "Sercon - A.J Vierci",
+        "date": "Julho 2023 - Atualmente",
+        "responsibilities": [
+          "Aprendi as bases do desenvolvimento Front-End com React e TypeScript.",
+          "Desenvolvi em equipe um projeto de Galeria de Fotos para uso interno.",
+          "Implementei práticas de desenvolvimento ágil e controle de versões com Git.",
+          "Compreendi o fluxo de programação em um ambiente real, integrando componentes e APIs.",
+          "Aproveitei ao máximo as tendências de IA para melhorar a eficiência do desenvolvimento.",
+          "Me atualizei com as últimas tendências e tecnologias em desenvolvimento web."
+        ]
+      }
+    }
+  },
+  "techstack": {
+    "title": "Habilidades",
+    "sub": "Algumas tecnologias que domino 👨‍💻"
+  },
+  "contact": {
+    "title": "Contato",
+    "sub": "💬 Tem perguntas ou ideias? Vamos conversar! 🚀",
+    "form": {
+      "nameLabel": "Seu nome",
+      "namePlaceholder": "Qual é o seu nome?",
+      "emailLabel": "Seu Email",
+      "emailPlaceholder": "Qual é o seu endereço de e-mail?",
+      "messageLabel": "Sua Mensagem",
+      "messagePlaceholder": "Como posso ajudá-lo?",
+      "send": "Enviar mensagem",
+      "sending": "Enviando..."
+    }
+  }
+}

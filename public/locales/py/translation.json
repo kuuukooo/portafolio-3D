@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "work": "Tembiapo",
+    "qualities": "Porã rembiapo",
+    "experience": "Areko hague",
+    "skills": "Kuaa",
+    "aboutme": "che rehegua"
+  },
+  "contactBtn": "Eñe'ẽ chéve",
+  "loading3d": {
+    "title": "Oguenohẽ hína Modelo 3D..."
+  },
+  "hero": {
+    "creating": "Ajapo hína",
+    "inRealProjects": "Tembiapo añetépe",
+    "intro": "Mba'eichapa lo mitã, che rera José Ramírez, che ha'e peteĩ mboguataháva JR Front‑End Luque-gua, Paraguai-gua.",
+    "age": "Ko'ágã aguereko {{edad}} ary ha aime mbohapy ary Ingeniería en Informática Universidad Americana-pe.",
+    "words": [
+      {
+        "text": "Jehepy",
+        "imgPath": "/images/ideas.svg"
+      },
+      {
+        "text": "Temimbo'e",
+        "imgPath": "/images/concepts.svg"
+      },
+      {
+        "text": "Ta'ãnga",
+        "imgPath": "/images/designs.svg"
+      },
+      {
+        "text": "Ayvu",
+        "imgPath": "/images/code.svg"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Tembiapo",
+    "sub": "Che tembiapo iporãvéva 🤓",
+    "projectRepo": "Ñongatuha",
+    "projectPost": "LinkedIn ñe'ẽmondo",
+    "projectLive": "Ehecha tembiapo",
+    "projects": [
+      {
+        "alt": "Ñemuhã MERN",
+        "title": "Ñemuhã MERN reheve",
+        "desc": "Peteĩ ñemuhã ñanduti rupive ojejapo MongoDB, Express, React ha Node.js reheve. Ha'e peteĩ ñeha'ãnga puruhárape ikatu haguã oguata apopyre, omoĩ karritope ha ojapo jeruregua."
+      },
+      {
+        "alt": "Minecraft jeporavo",
+        "title": "Minecraft jeporavo React ha Three.js reheve",
+        "desc": "Peteĩ Minecraft jeporavo ñanduti peg̃uarã React ha Three.js reheve. Omoneĩ oñembojoaju bloque ndive, omopu'ã estructura ha oporupy ñembosarái rembiapo ypy."
+      },
+      {
+        "alt": "Gueraha papapyre",
+        "title": "Gueraha papapyre Paraguay-pe",
+        "desc": "Peteĩ gueraha papapyre Paraguay jerere oikehápe marandu tenda turístico, tembi'u ha tekoha rehegua."
+      },
+      {
+        "alt": "Dados ñembosarái",
+        "title": "Dados ñembosarái",
+        "desc": "Peteĩ dados ñembosarái ymaguare ojejapoháva React reheve. Omoneĩ emongu'e dados ha ombyaty puntos ko ñembosarái vy'ápe \"Tenzies-pe.\""
+      }
+    ]
+  },
+  "featureCards": {
+    "title": "Porã rembiapo",
+    "sub": "Mba'e chendive iñambue 🔋",
+    "abilities": {
+      "fastLearning": {
+        "title": "Ñemoarandu Pya'e",
+        "desc": "Che rohayhu peteĩ tapicha ñemoarandúva pya'e, añemoambue teknología ha tembiporu pyahúpe."
+      },
+      "flexibility": {
+        "title": "Jeiko ha Ñemoambue",
+        "desc": "Che ningo añemoambue haguã opaichagua tendápe ha aikume'ẽ jehepy térã tape pyahu."
+      },
+      "clearCommunication": {
+        "title": "Ñe'ẽ Hesakã",
+        "desc": "Che ha'e mbarete ha ikatu hendu porãva, ningo akambu'e haguã ñemomarandu porã ha je'epyre."
+      }
+    }
+  },
+  "experience": {
+    "title": "Tembiapo Areko Hague",
+    "sub": "Ehecha moõpa ajapo tembiapo 🤓",
+    "respon": "Tembiapo",
+    "cards": {
+      "itIntern": {
+        "respon": "Tembiapo",
+        "review": "Tembiapo técnico oĩvagui, aikuaa Microsoft Office, amoarandu tembiapo oñondivepa, amoporãve che rekoha ñemboheko ha amoheñói ñeha'ã tekotevẽ areko haguã tembiapo oñeme'ẽháva.",
+        "title": "IT Temimbo'ekuaahára",
+        "company": "Centro Educativo San Sebastián",
+        "date": "Jasype 2022 - Jasypoteĩ 2022",
+        "responsibilities": [
+          "Aikuaa Linux Bash ha Powershell ñe'ẽtéva.",
+          "Amoĩ, amoporã ha amoĩporã mohendaha mesa ári.",
+          "Añemba'apo aty ndive asoluciona haguã apañuãi técnico.",
+          "Amoporãve ñemboheko ha ñeplanifica tembiapo.",
+          "Ajapo pe cables RJ45 ha conector ñongatu.",
+          "Amoheñói ha amomba'eguasu che kuaa ñe'ẽme."
+        ]
+      },
+      "frontendApprentice": {
+        "respon": "Tembiapo",
+        "review": "Che rembiapo Front-End Temimbo'ekuaahára aja, amomba'eguasu ñemboguata lógica ypykuépe, aikuaa tembiapo kuatiaita rendápe ha aikumbykuaa mba'éichapa ojejapo software oĩhápe añetehápe, añemba'apo aty ndive amoherakuã haguã solución omba'apóva ha ikatu haguã okakuaa.",
+        "title": "Front-End Temimbo'ekuaahára",
+        "company": "Sercon - A.J Vierci",
+        "date": "Jasypokõi 2023 - Ko'ágã",
+        "responsibilities": [
+          "Aikuaa Front-End ñemboguata ypykue React ha TypeScript reheve.",
+          "Ajapo aty ndive peteĩ tembiapo Ta'ãnga Ñongatuha ojeporu haguã ypype.",
+          "Amoĩ ñemboguata pya'e ha ñembohape Git reheve.",
+          "Aikumbykuaa ñemboguata rape oĩhápe añetehápe, amoĩva componente ha API.",
+          "Aiporu porãite AI rembiapo amoporãve haguã ñemboguata.",
+          "Añembopyahu tembiaporã ha teknología ipyahuvéva ñanduti ñemboguatápe."
+        ]
+      }
+    }
+  },
+  "techstack": {
+    "title": "Kuaa",
+    "sub": "Opaichagua teknología aikuaáva 👨‍💻"
+  },
+  "contact": {
+    "title": "Ñe'ẽ",
+    "sub": "💬 ¿Reguereko porandu térã jehepy? ¡Ñañe'ẽ! 🚀",
+    "form": {
+      "nameLabel": "Nde réra",
+      "namePlaceholder": "¿Mba'éichapa nde réra?",
+      "emailLabel": "Nde Email",
+      "emailPlaceholder": "¿Mba'éichapa nde correo kundaharape?",
+      "messageLabel": "Nde Ñe'ẽmondo",
+      "messagePlaceholder": "¿Mba'éichapa ikatu roipytyvõ?",
+      "send": "Emondo ñe'ẽmondo",
+      "sending": "Omondohína..."
+    }
+  }
+}

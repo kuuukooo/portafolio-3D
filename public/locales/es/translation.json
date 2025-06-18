@@ -1,0 +1,130 @@
+{
+"nav": {
+        "work": "Trabajos",
+        "qualities": "Cualidades",
+        "experience": "Experiencia",
+        "skills": "Habilidades",
+        "aboutme": "Sobre mí"
+      },
+      "contactBtn": "Contáctame",
+      "loading3d": {
+        "title": "Cargando Modelo 3D..."
+      },
+      "hero": {
+        "creating": "Creando",
+        "inRealProjects": "En proyectos Reales",
+        "intro":
+          "Buenas, soy José Ramírez, un desarrollador JR Front‑End de Luque, Paraguay.",
+        "age": "Actualmente tengo {{edad}} años y estoy en el tercer año de la carrera de Ingeniería en Informática en la Universidad Americana.",
+        "words": [
+          { "text": "Ideas", "imgPath": "/images/ideas.svg" },
+          { "text": "Conceptos", "imgPath": "/images/concepts.svg" },
+          { "text": "Diseños", "imgPath": "/images/designs.svg" },
+          { "text": "Código", "imgPath": "/images/code.svg" }
+        ]
+      },
+      "showcase": {
+        "title": "Trabajos",
+        "sub": "Algunos de mis trabajos más destacados 🤓",
+        "projectRepo": "Repositorio",
+        "projectPost": "Post de LinkedIn",
+        "projectLive": "Ver proyecto",
+        "projects": [
+          {
+            "alt": "Tienda MERN",
+            "title": "Tienda con Stack MERN",
+            "desc": "Una tienda online construida con MongoDB, Express, React y Node.js. Es un prototipo donde los usuarios pueden navegar productos, añadir al carrito y realizar pedidos."
+          },
+          {
+            "alt": "Clon de Minecraft",
+            "title": "Clon de Minecraft con React y Three.js",
+            "desc": "Un clon de Minecraft para la web con React y Three.js. Permite interactuar con bloques, construir estructuras y disfrutar de funciones básicas del juego."
+          },
+          {
+            "alt": "Diario de Viajes",
+            "title": "Diario de Viajes en Paraguay",
+            "desc": "Un diario de viajes por Paraguay que incluye información sobre lugares turísticos, gastronomía y cultura del país."
+          },
+          {
+            "alt": "Juego de Dieces",
+            "title": "Juego de Dieces",
+            "desc": "Un juego de dados clásico desarrollado con React. Permite lanzar dados y acumular puntos en este divertido juego de Tenzies."
+          }
+        ]
+      },
+      "featureCards": {
+        "title": "Cualidades",
+        "sub": "Cosas que me destacan 🔋",
+        "abilities": {
+          "fastLearning": {
+            "title": "Aprendizaje Rápido",
+            "desc": "Me considero alguien que aprende rápidamente, adaptándome a nuevas tecnologías y herramientas."
+          },
+          "flexibility": {
+            "title": "Flexibilidad y Adaptabilidad",
+            "desc": "Estoy abierto a adaptarme a diferentes entornos y absorber ideas o enfoques nuevos."
+          },
+          "clearCommunication": {
+            "title": "Comunicación Clara",
+            "desc": "Soy asertivo y capaz de escuchar activamente, abierto a recibir críticas constructivas y sugerencias."
+          }
+        }
+      },
+      "experience": {
+        "title": "Experiencia Profesional",
+        "sub": "Una vista a mi trayectoria 🤓",
+        "respon": "Responsabilidades",
+        "cards": {
+          "itIntern": {
+            "respon": "Responsabilidades",
+            "review":
+              "Además de las actividades técnicas, adquirí habilidades en el uso de Microsoft Office, aprendí metodologías de trabajo colaborativo, mejoré mi capacidad de organización de proyectos y desarrollé la diligencia necesaria para cumplir con las tareas asignadas.",
+            "title": "Pasante de IT",
+            "company": "Centro Educativo San Sebastián",
+            "date": "Febrero 2022 - Junio 2022",
+            "responsibilities": [
+              "Aprendí comandos de Linux Bash y Powershell.",
+              "Instalé, reparé y configuré computadoras de Escritorio.",
+              "Colaboré en equipo para resolver problemas técnicos.",
+              "Mejoré la organización y planificación de proyectos.",
+              "Realicé el mantenimiento de cables RJ45 y conectores.",
+              "Desarrollé y profundicé mis habilidades blandas."
+            ]
+          },
+          "frontendApprentice": {
+            "respon": "Responsabilidades",
+            "review":
+              "Durante mi rol como Aprendiz de Front-End, profundicé en las bases de la lógica de programación, adquirí habilidades de trabajo con bases de datos y comprendí cómo se desarrolla software en un entorno real, colaborando estrechamente con el equipo para entregar soluciones funcionales y escalables.",
+            "title": "Aprendiz de Front-End",
+            "company": "Sercon - A.J Vierci",
+            "date": "Julio 2023 - Actualmente",
+            "responsibilities": [
+              "Aprendí las bases del desarrollo Front-End con React y TypeScript.",
+              "Desarrollé en equipo un proyecto de Galería de Fotos para uso interno.",
+              "Implementé prácticas de desarrollo ágil y control de versiones con Git.",
+              "Comprendí el flujo de programación en un entorno real, integrando componentes y APIs.",
+              "Aproveché al máximo las tendencias de IA para mejorar la eficiencia del desarrollo.",
+              "Me puse al día con las últimas tendencias y tecnologías en desarrollo web."
+            ]
+          }
+        }
+      },
+      "techstack": {
+        "title": "Habilidades",
+        "sub": "Algunas tecnologías que manejo 👨‍💻"
+      },
+      "contact": {
+        "title": "Contacto",
+        "sub": "💬 ¿Tienes preguntas o ideas? ¡Hablemos! 🚀",
+        "form": {
+          "nameLabel": "Tu nombre",
+          "namePlaceholder": "¿Cuál es tu nombre?",
+          "emailLabel": "Tu Email",
+          "emailPlaceholder": "¿Cuál es tu dirección de correo?",
+          "messageLabel": "Tu Mensaje",
+          "messagePlaceholder": "¿Cómo puedo ayudarte?",
+          "send": "Enviar mensaje",
+          "sending": "Enviando..."
+        }
+      }
+    }

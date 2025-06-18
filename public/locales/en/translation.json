@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "work": "Works",
+    "qualities": "Qualities",
+    "experience": "Experience",
+    "skills": "Skills",
+    "aboutme": "About me"
+  },
+  "contactBtn": "Contact me",
+  "loading3d": {
+    "title": "Loading 3D Model..."
+  },
+  "hero": {
+    "creating": "Creating",
+    "inRealProjects": "In Real‑World Projects",
+    "intro": "Hello, I'm José Ramírez, a JR Front‑End developer from Luque, Paraguay.",
+    "age": "I am currently {{edad}} years old and in my third year majoring in Computer Science at Universidad Americana. I am a level C2 English speaker, which allows me to communicate, speak, develop code and write pretty well :).",
+    "words": [
+      {
+        "text": "Ideas",
+        "imgPath": "/images/ideas.svg"
+      },
+      {
+        "text": "Concepts",
+        "imgPath": "/images/concepts.svg"
+      },
+      {
+        "text": "Designs",
+        "imgPath": "/images/designs.svg"
+      },
+      {
+        "text": "Code",
+        "imgPath": "/images/code.svg"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Works",
+    "sub": "Some of my top projects 🤓",
+    "projectRepo": "Repository",
+    "projectPost": "LinkedIn Post",
+    "projectLive": "View Project",
+    "projects": [
+      {
+        "alt": "MERN Store",
+        "title": "MERN Stack Store",
+        "desc": "An online store built with MongoDB, Express, React and Node.js. It's a prototype shop where users can browse products, add to cart and place orders."
+      },
+      {
+        "alt": "Minecraft Clone",
+        "title": "Minecraft Clone with React & Three.js",
+        "desc": "A web-based Minecraft clone using React and Three.js. Users can interact with game blocks, build structures and enjoy basic gameplay features."
+      },
+      {
+        "alt": "Travel Journal",
+        "title": "Travel Journal in Paraguay",
+        "desc": "A Paraguay travel journal highlighting tourist spots, gastronomy and cultural insights about the country."
+      },
+      {
+        "alt": "Tenzies Game",
+        "title": "Tenzies Dice Game",
+        "desc": "A classic dice game built with React. Users roll dice and accumulate points in this fun implementation of Tenzies."
+      }
+    ]
+  },
+  "featureCards": {
+    "title": "Qualities",
+    "sub": "Things that make me stand out 🔋",
+    "abilities": {
+      "fastLearning": {
+        "title": "Fast Learner",
+        "desc": "I consider myself a fast learner, adapting quickly to new technologies and tools."
+      },
+      "flexibility": {
+        "title": "Flexibility & Adaptability",
+        "desc": "I'm open to different environments and eager to absorb new ideas or approaches."
+      },
+      "clearCommunication": {
+        "title": "Clear Communication",
+        "desc": "I'm assertive and an active listener, open to constructive feedback and suggestions."
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "sub": "A look at my career 🤓",
+    "cards": {
+      "itIntern": {
+        "respon": "Responsabilities",
+        "review": "Beyond technical tasks, I gained Microsoft Office skills, learned collaborative work methodologies, improved my project organization abilities, and developed the diligence needed to fulfill assigned tasks.",
+        "title": "IT Intern",
+        "company": "Centro Educativo San Sebastián",
+        "date": "February 2022 - June 2022",
+        "responsibilities": [
+          "Learned Linux Bash and Powershell commands.",
+          "Installed, repaired, and configured desktop computers.",
+          "Collaborated in a team to solve technical issues.",
+          "Improved project planning and organization.",
+          "Performed maintenance on RJ45 cables and connectors.",
+          "Developed and deepened my soft skills."
+        ]
+      },
+      "frontendApprentice": {
+        "respon": "Responsabilities",
+        "review": "As a Front‑End Apprentice, I deepened my programming logic foundations, gained database work skills, and learned how software is developed in a real environment, collaborating closely with the team to deliver functional and scalable solutions.",
+        "title": "Front‑End Apprentice",
+        "company": "Sercon - A.J Vierci",
+        "date": "July 2023 - Present",
+        "responsibilities": [
+          "Learned Front‑End development fundamentals with React and TypeScript.",
+          "Collaborated on an internal Photo Gallery project.",
+          "Implemented agile development practices and version control with Git.",
+          "Understood the programming flow in a real setting, integrating components and APIs.",
+          "Leveraged AI trends to boost development efficiency.",
+          "Kept up with the latest web development trends and technologies."
+        ]
+      }
+    }
+  },
+  "techstack": {
+    "title": "Skills",
+    "sub": "Some of the tech that I use 👨‍💻"
+  },
+  "contact": {
+    "title": "Contact",
+    "sub": "💬 Got questions or ideas? Let's talk! 🚀",
+    "form": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "What's your name?",
+      "emailLabel": "Your Email",
+      "emailPlaceholder": "What's your email address?",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "How can I help you?",
+      "send": "Send Message",
+      "sending": "Sending..."
+    }
+  }
+}

@@ -5,6 +5,7 @@ import FeatureCards from './sections/FeatureCards'
 import Footer from './sections/Footer'
 import TechStack from './sections/TechStack'
 import Translate from './components/Translate'
+import PersonalInterests from './sections/PersonalInterests'
 // Lazy load
 const Hero = lazy(() => import('./sections/Hero'))
 const ShowcaseSection = lazy(() => import('./sections/ShowcaseSection'))
