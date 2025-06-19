@@ -135,5 +135,128 @@
       "send": "Emondo ñe'ẽmondo",
       "sending": "Omondohína..."
     }
-  }
+  },
+      "aboutme": {
+      "header": {
+        "title": "Che Rembieguára",
+        "sub": "Che Rehegua 🤓"
+      },
+      "imageAlt": "Che ra'anga jaja",
+      "sections": {
+        "hobbies": "Chemba'eporã",
+        "games": "Ñembosaráiha",
+        "music": "Purahéi"
+      },
+      "descriptions": {
+        "hobbies": "Mba'e ajapohápe che akãnuhã jave",
+        "games": "Ñembosaráiha omoheñóiva chéve",
+        "music": "Che purahéi oguerohoryvéva! :D"
+      },
+      "empty": "Ndaipóri {{section}} mba'ekuaarã",
+      "emptyHint": "Ehecha nde constantes marandurenda oĩ porã hag̃ua mba'ekuaarã.",
+      "statsList": [
+        { "section": "hobbies"},
+        { "section": "games"},
+        { "section": "music" }
+      ],
+      "statsText": {
+        "hobbies": "{{count}} Chemba'eporã",
+        "games": "{{count}} Ñembosaráiha",
+        "music": "{{count}} Purahéi rysýi"
+      },
+      "hobbies": [
+        {
+          "id": 1,
+          "title": "Moñe'ẽ",
+          "description": "Amoañetéma amoñe'ẽ kuatiañe'ẽ, che regusta mba'epytyvõrã, ciencia ficción, thriller ha novela.",
+          "image": "../images/aboutme/leyendo.webp"
+        },
+        {
+          "id": 2,
+          "title": "Guata",
+          "description": "Aguata hese che regusta ha ajesarái mundo-gui. Ndarekói heta jey upéicha ajapo pero aguerohoryvénte ajapo vove.",
+          "category": "Tekove katu",
+          "image": "../images/aboutme/walking.webp"
+        },
+        {
+          "id": 3,
+          "title": "Moñe'ẽrã",
+          "description": "Amoañetéma hai ha'e che mba'eporã. Aguerohoryvéte ahechauka che apytu'ũ ha che remiandu ñe'ẽ rupive.",
+          "category": "Moheñóiva",
+          "image": "../images/aboutme/escribiendo.webp"
+        }
+      ],
+      "favoriteGames": [
+        {
+          "id": 1,
+          "title": "The Legend of Zelda: Breath of the Wild",
+          "description": "Che ñembosaráiha oguerohoryvéva Nintendo-gui. Purahéi iporãiterei, mundo tuichaiterei ha ñembosarái iporãite. 💋",
+          "genre": "Ñorairõ-Aventura",
+          "platform": "Nintendo Switch",
+          "rating": 5,
+          "image": "../images/aboutme/zelda.webp"
+        },
+        {
+          "id": 2,
+          "title": "Minecraft",
+          "description": "Che mitãnguéra ñembosaráiha. Ahecha heta Minecraft ta'ãngamýi YouTube-pe ha ajapo aravo. Ha'e che ñembosaráiha py'aguasu.",
+          "genre": "Sandbox",
+          "platform": "PC, Console, Mobile",
+          "rating": 5,
+          "image": "../images/aboutme/minecraft.webp"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "description": "Che FPS oguerohoryvéva. Che ryvy ohechauka chéve ko ñembosaráiha CS 1.6 iporã jave. Aipotaiterei upéichante.",
+          "genre": "FPS",
+          "platform": "PC (Steam)",
+          "rating": 4,
+          "image": "../images/aboutme/cs2.webp"
+        },
+        {
+          "id": 4,
+          "title": "Team Fortress 2",
+          "description": "Ambue mitãnguéra mba'e oguerohoryvéva. Aguerohory arte jehegua, tapicha ha ñembosarái. Iporãiterei angirũ ndive ajapo.",
+          "genre": "FPS",
+          "platform": "PC (Steam)",
+          "rating": 5,
+          "image": "../images/aboutme/tf2.webp"
+        }
+      ],
+      "spotifyContent": [
+        {
+          "id": 1,
+          "title": "Chill",
+          "type": "purahéi rysýi",
+          "description": "Che aiporuhápe aikotevẽ jave apy'aguasu térã ajesareko",
+          "spotifyUrl": "https://open.spotify.com/playlist/1okd0zHgMiymsVFq9FkerX?si=4313ee25bd60460a",
+          "embedUrl": "https://open.spotify.com/embed/playlist/1okd0zHgMiymsVFq9FkerX?utm_source=generator" 
+        },
+        {
+          "id": 2,
+          "title": "J-Songs",
+          "type": "purahéi rysýi",
+          "description": "Che purahéi Japón-gua oguerohoryvéva",
+          "spotifyUrl": "https://open.spotify.com/playlist/737fIznheqy5CaviF7r3zC?si=5dd74c79dd4c40dc",
+          "embedUrl": "https://open.spotify.com/embed/playlist/737fIznheqy5CaviF7r3zC?utm_source=generator"
+        },
+        {
+          "id": 3,
+          "title": "Groove",
+          "type": "purahéi rysýi",
+          "description": "vy'arã 😎",
+          "spotifyUrl": "https://open.spotify.com/playlist/7JGEhevIESPNwQ439KvtfX?si=9f13975964f34d6c",
+          "embedUrl": "https://open.spotify.com/embed/playlist/7JGEhevIESPNwQ439KvtfX?utm_source=generator" 
+        },
+        {
+          "id": 4,
+          "title": "Brazil",
+          "type": "purahéi rysýi",
+          "description": "aguerohoryvéte jazz Brasil-gua ha bossa nova",
+          "spotifyUrl": "https://open.spotify.com/playlist/6waafKxvnvU1EgR5iiLABO?si=9bd7b3ece1e54365",
+          "embedUrl": "https://open.spotify.com/embed/playlist/6waafKxvnvU1EgR5iiLABO?utm_source=generator" 
+        }
+      ]
+    }
 }

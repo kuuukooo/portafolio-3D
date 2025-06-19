@@ -134,5 +134,128 @@
       "send": "Send Message",
       "sending": "Sending..."
     }
+  },
+  "aboutme": {
+    "header": {
+      "title": "Personal Interests",
+      "sub": "About Me 🤓"
+    },
+    "imageAlt": "A photo of me lol",
+    "sections": {
+      "hobbies": "Hobbies",
+      "games": "Video Games",
+      "music": "Music"
+    },
+    "descriptions": {
+      "hobbies": "Activities that I enjoy in my free time",
+      "games": "Games that shaped me as a person",
+      "music": "My favorite songs! :D"
+    },
+    "empty": "No {{section}} data available",
+    "emptyHint": "Check your constants file to ensure data is properly configured.",
+    "statsList": [
+      { "section": "hobbies"},
+      { "section": "games"},
+      { "section": "music" }
+    ],
+    "statsText": {
+      "hobbies": "{{count}} Hobbies",
+      "games":   "{{count}} Games",
+      "music":   "{{count}} Playlists"
+    },
+    "hobbies": [
+      {
+        "id": 1,
+        "title": "Reading",
+        "description": "I recently started reading books, I'm interested in technology, science fiction, Thrillers and novels.",
+        "image": "../images/aboutme/leyendo.webp"
+      },
+      {
+        "id": 2,
+        "title": "Going for Walks",
+        "description": "I like to go out and disconnect from the world. I don't do it much but I love it when I do.",
+        "category": "Wellness",
+        "image": "../images/aboutme/walking.webp"
+      },
+      {
+        "id": 3,
+        "title": "Writing",
+        "description": "I recently picked up writing as a hobby. I enjoy expressing my thoughts and ideas through words.",
+        "category": "Creative",
+        "image": "../images/aboutme/escribiendo.webp"
+      }
+    ],
+    "favoriteGames": [
+      {
+        "id": 1,
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "description": "My all-time favorite Nintendo game. The soundtack is awesome, the world is massive and the gameplay is chef kiss. 💋",
+        "genre": "Action-Adventure",
+        "platform": "Nintendo Switch",
+        "rating": 5,
+        "image": "../images/aboutme/zelda.webp"
+      },
+      {
+        "id": 2,
+        "title": "Minecraft",
+        "description": "My childhood game. Binged-watched Minecraft videos on YouTube and played it for hours. It's my comfort game.",
+        "genre": "Sandbox",
+        "platform": "PC, Console, Mobile",
+        "rating": 5,
+        "image": "../images/aboutme/minecraft.webp"
+      },
+      {
+        "id": 3,
+        "title": "Counter-Strike 2",
+        "description": "My favorite FPS of all time. My brother showed me this game back in the day that Cs 1.6 rocked. I was hooked instantly.",
+        "genre": "FPS",
+        "platform": "PC (Steam)",
+        "rating": 4,
+        "image": "../images/aboutme/cs2.webp"
+      },
+      {
+        "id": 4,
+        "title": "Team Fortress 2",
+        "description": "Another childhood favorite. I loved the art style, the characters and the gameplay. It was a blast playing with friends.",
+        "genre": "FPS",
+        "platform": "PC (Steam)",
+        "rating": 5,
+        "image": "../images/aboutme/tf2.webp"
+      }
+    ],
+    "spotifyContent": [
+      {
+        "id": 1,
+        "title": "Chill",
+        "type": "playlist",
+        "description": "My go-to when I need to relax or focus",
+        "spotifyUrl": "https://open.spotify.com/playlist/1okd0zHgMiymsVFq9FkerX?si=4313ee25bd60460a",
+        "embedUrl": "https://open.spotify.com/embed/playlist/1okd0zHgMiymsVFq9FkerX?utm_source=generator" 
+      },
+      {
+        "id": 2,
+        "title": "J-Songs",
+        "type": "playlist",
+        "description": "My favorite Japanese songs",
+        "spotifyUrl": "https://open.spotify.com/playlist/737fIznheqy5CaviF7r3zC?si=5dd74c79dd4c40dc",
+        "embedUrl": "https://open.spotify.com/embed/playlist/737fIznheqy5CaviF7r3zC?utm_source=generator"
+      },
+      {
+        "id": 3,
+        "title": "Groove",
+        "type": "playlist",
+        "description": "vibes 😎",
+        "spotifyUrl": "https://open.spotify.com/playlist/7JGEhevIESPNwQ439KvtfX?si=9f13975964f34d6c",
+        "embedUrl": "https://open.spotify.com/embed/playlist/7JGEhevIESPNwQ439KvtfX?utm_source=generator" 
+      },
+      {
+        "id": 4,
+        "title": "Brazil",
+        "type": "playlist",
+        "description": "big fan of brazilian jazz and bossa nova",
+        "spotifyUrl": "https://open.spotify.com/playlist/6waafKxvnvU1EgR5iiLABO?si=9bd7b3ece1e54365",
+        "embedUrl": "https://open.spotify.com/embed/playlist/6waafKxvnvU1EgR5iiLABO?utm_source=generator" 
+      }
+    ]
   }
 }

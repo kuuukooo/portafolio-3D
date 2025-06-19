@@ -1,5 +1,5 @@
 const SpotifyEmbed = ({ embedUrl, title }) => (
-  <div className="w-full h-80 rounded-xl overflow-hidden card-border">
+  <div className="w-full h-48 rounded-xl overflow-hidden card-border">
     <iframe
       src={embedUrl}
       width="100%"
@@ -11,6 +11,6 @@ const SpotifyEmbed = ({ embedUrl, title }) => (
       className="rounded-xl"
     ></iframe>
   </div>
-);
+)
 
-export default SpotifyEmbed;
+export default SpotifyEmbed

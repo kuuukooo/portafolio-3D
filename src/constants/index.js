@@ -166,6 +166,7 @@ const favoriteGames = [
   {
     id: 1,
     title: "The Legend of Zelda: Breath of the Wild",
+    link: "https://www.zelda.com/breath-of-the-wild/",
     description: "Open-world adventure that redefined exploration",
     genre: "Action-Adventure",
     platform: "Nintendo Switch",

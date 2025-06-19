@@ -135,5 +135,128 @@
       "send": "Enviar mensagem",
       "sending": "Enviando..."
     }
-  }
+  },
+  "aboutme": {
+      "header": {
+        "title": "Interesses Pessoais",
+        "sub": "Sobre Mim 🤓"
+      },
+      "imageAlt": "Uma foto minha rsrs",
+      "sections": {
+        "hobbies": "Hobbies",
+        "games": "Jogos",
+        "music": "Música"
+      },
+      "descriptions": {
+        "hobbies": "Atividades que gosto de fazer no meu tempo livre",
+        "games": "Jogos que me formaram como pessoa",
+        "music": "Minhas músicas favoritas! :D"
+      },
+      "empty": "Nenhum dado de {{section}} disponível",
+      "emptyHint": "Verifique seu arquivo de constantes para garantir que os dados estejam configurados corretamente.",
+      "statsList": [
+        { "section": "hobbies"},
+        { "section": "games"},
+        { "section": "music" }
+      ],
+      "statsText": {
+        "hobbies": "{{count}} Hobbies",
+        "games": "{{count}} Jogos",
+        "music": "{{count}} Playlists"
+      },
+      "hobbies": [
+        {
+          "id": 1,
+          "title": "Leitura",
+          "description": "Recentemente comecei a ler livros, tenho interesse em tecnologia, ficção científica, thrillers e romances.",
+          "image": "../images/aboutme/leyendo.webp"
+        },
+        {
+          "id": 2,
+          "title": "Caminhadas",
+          "description": "Gosto de sair e me desconectar do mundo. Não faço muito isso, mas adoro quando faço.",
+          "category": "Bem-estar",
+          "image": "../images/aboutme/walking.webp"
+        },
+        {
+          "id": 3,
+          "title": "Escrita",
+          "description": "Recentemente adotei a escrita como hobby. Gosto de expressar meus pensamentos e ideias através das palavras.",
+          "category": "Criativo",
+          "image": "../images/aboutme/escribiendo.webp"
+        }
+      ],
+      "favoriteGames": [
+        {
+          "id": 1,
+          "title": "The Legend of Zelda: Breath of the Wild",
+          "description": "Meu jogo favorito da Nintendo de todos os tempos. A trilha sonora é incrível, o mundo é massivo e a jogabilidade é *chef's kiss*. 💋",
+          "genre": "Ação-Aventura",
+          "platform": "Nintendo Switch",
+          "rating": 5,
+          "image": "../images/aboutme/zelda.webp"
+        },
+        {
+          "id": 2,
+          "title": "Minecraft",
+          "description": "Meu jogo da infância. Assistia vídeos de Minecraft no YouTube e jogava por horas. É meu jogo de conforto.",
+          "genre": "Sandbox",
+          "platform": "PC, Console, Mobile",
+          "rating": 5,
+          "image": "../images/aboutme/minecraft.webp"
+        },
+        {
+          "id": 3,
+          "title": "Counter-Strike 2",
+          "description": "Meu FPS favorito de todos os tempos. Meu irmão me mostrou este jogo na época em que o CS 1.6 dominava. Fiquei viciado instantaneamente.",
+          "genre": "FPS",
+          "platform": "PC (Steam)",
+          "rating": 4,
+          "image": "../images/aboutme/cs2.webp"
+        },
+        {
+          "id": 4,
+          "title": "Team Fortress 2",
+          "description": "Outro favorito da infância. Adorava o estilo artístico, os personagens e a jogabilidade. Era demais jogar com os amigos.",
+          "genre": "FPS",
+          "platform": "PC (Steam)",
+          "rating": 5,
+          "image": "../images/aboutme/tf2.webp"
+        }
+      ],
+      "spotifyContent": [
+        {
+          "id": 1,
+          "title": "Chill",
+          "type": "playlist",
+          "description": "Minha escolha quando preciso relaxar ou me concentrar",
+          "spotifyUrl": "https://open.spotify.com/playlist/1okd0zHgMiymsVFq9FkerX?si=4313ee25bd60460a",
+          "embedUrl": "https://open.spotify.com/embed/playlist/1okd0zHgMiymsVFq9FkerX?utm_source=generator" 
+        },
+        {
+          "id": 2,
+          "title": "J-Songs",
+          "type": "playlist",
+          "description": "Minhas músicas japonesas favoritas",
+          "spotifyUrl": "https://open.spotify.com/playlist/737fIznheqy5CaviF7r3zC?si=5dd74c79dd4c40dc",
+          "embedUrl": "https://open.spotify.com/embed/playlist/737fIznheqy5CaviF7r3zC?utm_source=generator"
+        },
+        {
+          "id": 3,
+          "title": "Groove",
+          "type": "playlist",
+          "description": "😎",
+          "spotifyUrl": "https://open.spotify.com/playlist/7JGEhevIESPNwQ439KvtfX?si=9f13975964f34d6c",
+          "embedUrl": "https://open.spotify.com/embed/playlist/7JGEhevIESPNwQ439KvtfX?utm_source=generator" 
+        },
+        {
+          "id": 4,
+          "title": "Brazil",
+          "type": "playlist",
+          "description": "grande fã de jazz brasileiro e bossa nova",
+          "spotifyUrl": "https://open.spotify.com/playlist/6waafKxvnvU1EgR5iiLABO?si=9bd7b3ece1e54365",
+          "embedUrl": "https://open.spotify.com/embed/playlist/6waafKxvnvU1EgR5iiLABO?utm_source=generator" 
+        }
+      ]
+    }
 }

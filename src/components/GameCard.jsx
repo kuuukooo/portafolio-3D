@@ -1,42 +1,65 @@
-import { Gamepad2, Star } from 'lucide-react';
+import { Gamepad2, Star } from "lucide-react"
 
-const GameCard = ({ game }) => (
-  <div className="card-border rounded-xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.02]">
-    <div className="relative overflow-hidden">
-      <img
-        src={game.image}
-        alt={game.title}
-        className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black-100 via-transparent to-transparent opacity-60"></div>
+const StarRating = ({ rating, maxRating = 5 }) => {
+  const stars = []
+  const fullStars = Math.floor(rating)
+
+  for (let i = 0; i < maxRating; i++) {
+    stars.push(
+      <Star
+        key={i}
+        size={14}
+        className={`${i < fullStars ? "text-white-50 fill-current" : "text-black-50 opacity-50"
+          } transition-colors duration-300`}
+      />,
+    )
+  }
+
+  return (
+    <div className="flex items-center gap-1">
+      {stars}
+      <span className="text-xs text-blue-50 ml-2 font-medium">{rating.toFixed(1)}</span>
     </div>
+  )
+}
 
-    <div className="p-6">
-      <div className="flex items-start justify-between mb-3">
-        <h3 className="text-xl font-semibold text-white-50 leading-tight">{game.title}</h3>
-        <Gamepad2 size={20} className="text-blue-50 flex-shrink-0 mt-1" />
+const GameCard = ({ game = {} }) => {
+  const {
+    title = "Untitled Game",
+    description = "No description available",
+    rating = 0,
+    link = "#",
+    image = "/placeholder.svg",
+  } = game
+
+  return (
+    <div className="card-border rounded-xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.02]">
+      <div className="relative overflow-hidden">
+        <a href={link} onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">
+          <img
+            src={image || "/placeholder.svg"}
+            alt={title}
+            className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+        </a>
+        <div className="absolute inset-0 bg-gradient-to-t from-black-100 via-transparent to-transparent opacity-60"></div>
       </div>
 
-      <p className="text-blue-50 text-sm mb-4 leading-relaxed">{game.description}</p>
+      <div className="p-6 space-y-4">
+        <div>
+          <h3 className="text-xl font-semibold text-white-50 leading-tight mb-2 group-hover:text-white transition-colors duration-300">
+            {title}
+          </h3>
+          <p className="text-blue-50 text-sm leading-relaxed">{description}</p>
+        </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <span className="hero-badge text-xs">
-          {game.genre}
-        </span>
-        <div className="flex items-center gap-1">
-          {[...Array(5)].map((_, i) => (
-            <Star
-              key={i}
-              size={14}
-              className={`${i < game.rating ? 'text-white-50 fill-current' : 'text-black-50'} transition-colors duration-300`}
-            />
-          ))}
+        {/* Rating */}
+        <div className="flex items-center justify-between">
+          <StarRating rating={rating} />
         </div>
       </div>
-
-      <p className="text-xs text-blue-50">{game.platform}</p>
     </div>
-  </div>
-);
+  )
+}
 
-export default GameCard;
+export default GameCard
