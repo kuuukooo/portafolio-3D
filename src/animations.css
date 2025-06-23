@@ -1,0 +1,194 @@
+/* Star Shimmer Animations - Each star moves back and forth with different timing */
+@keyframes shimmer-1 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateX(3px) translateY(-2px) scale(1.1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-2px) translateY(1px) scale(0.9);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateX(1px) translateY(-1px) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer-2 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateX(-3px) translateY(2px) scale(1.15);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(2px) translateY(-1px) scale(0.85);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateX(-1px) translateY(1px) scale(1.1);
+    opacity: 0.95;
+  }
+}
+
+@keyframes shimmer-3 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.9;
+  }
+  20% {
+    transform: translateX(2px) translateY(-3px) scale(1.2);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-1px) translateY(2px) scale(0.8);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translateX(1px) translateY(-1px) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes shimmer-4 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    transform: translateX(-2px) translateY(-2px) scale(1.1);
+    opacity: 1;
+  }
+  65% {
+    transform: translateX(3px) translateY(1px) scale(0.9);
+    opacity: 0.8;
+  }
+  85% {
+    transform: translateX(-1px) translateY(-1px) scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+@keyframes shimmer-5 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.75;
+  }
+  25% {
+    transform: translateX(1px) translateY(-2px) scale(1.15);
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(-2px) translateY(2px) scale(0.85);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateX(2px) translateY(-1px) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes shimmer-6 {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.85;
+  }
+  40% {
+    transform: translateX(-3px) translateY(-1px) scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(2px) translateY(2px) scale(0.9);
+    opacity: 0.7;
+  }
+  90% {
+    transform: translateX(-1px) translateY(-2px) scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+/* Spiral Animations */
+@keyframes spiral-1 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes spiral-2 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: rotate(-180deg) scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+@keyframes spiral-3 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+/* Apply animations with different durations */
+.animate-shimmer-1 {
+  animation: shimmer-1 3s ease-in-out infinite;
+}
+
+.animate-shimmer-2 {
+  animation: shimmer-2 2.5s ease-in-out infinite 0.5s;
+}
+
+.animate-shimmer-3 {
+  animation: shimmer-3 3.5s ease-in-out infinite 1s;
+}
+
+.animate-shimmer-4 {
+  animation: shimmer-4 2.8s ease-in-out infinite 0.3s;
+}
+
+.animate-shimmer-5 {
+  animation: shimmer-5 3.2s ease-in-out infinite 0.8s;
+}
+
+.animate-shimmer-6 {
+  animation: shimmer-6 2.7s ease-in-out infinite 1.2s;
+}
+
+.animate-spiral-1 {
+  animation: spiral-1 8s linear infinite;
+}
+
+.animate-spiral-2 {
+  animation: spiral-2 6s linear infinite 2s;
+}
+
+.animate-spiral-3 {
+  animation: spiral-3 10s linear infinite 4s;
+}
