@@ -6,7 +6,7 @@ const HobbyCard = ({ hobby = {} }) => {
   } = hobby
 
   return (
-    <div className="card-border rounded-xl overflow-hidden group cursor-pointer transition-all duration-500 hover:scale-[1.02]">
+    <div className="card-border rounded-xl overflow-hidden group cursor-default transition-all duration-500 hover:scale-[1.02]">
       <div className="relative overflow-hidden">
         <img
           src={image || "/placeholder.svg"}
