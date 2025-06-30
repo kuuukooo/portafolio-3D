@@ -184,6 +184,13 @@
           "description": "Recentemente adotei a escrita como hobby. Gosto de expressar meus pensamentos e ideias através das palavras.",
           "category": "Criativo",
           "image": "../images/aboutme/escribiendo.webp"
+        },
+        {
+          "id": 4,
+          "title": "Cozinhar",
+          "description": "Adoro cozinhar, sempre ajudei a minha mãe na cozinha desde criança e agora adoro.",
+          "category": "Cozinha",
+          "image": "../images/aboutme/cooking.webp"
         }
       ],
       "favoriteGames": [

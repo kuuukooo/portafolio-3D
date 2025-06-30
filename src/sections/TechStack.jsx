@@ -47,7 +47,7 @@ const TechStack = () => {
           {techStackImgs.map(({ imgPath, name, link }, i) => (
             <div
               key={i}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group"
               style={{ transform: 'translateY(50px)', opacity: 0 }}
             >
               <div className="tech-card-animated-bg" />

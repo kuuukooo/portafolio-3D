@@ -175,6 +175,13 @@
             "description": "Recientemente adopté la escritura como pasatiempo. Disfruto expresar mis pensamientos e ideas a través de las palabras.",
             "category": "Creativo",
             "image": "../images/aboutme/escribiendo.webp"
+          },
+          {
+            "id": 4,
+            "title": "Cocina",
+            "description": "Me gusta mucho cocinar, desde pequeño siempre ayudaba a mi mamá en la cocina y actualmente me Encanta.",
+            "category": "Cocina",
+            "image": "../images/aboutme/cooking.webp"
           }
         ],
         "favoriteGames": [

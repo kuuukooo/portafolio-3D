@@ -183,6 +183,13 @@
         "description": "I recently picked up writing as a hobby. I enjoy expressing my thoughts and ideas through words.",
         "category": "Creative",
         "image": "../images/aboutme/escribiendo.webp"
+      },
+      {
+      "id": 4,
+      "title": "Cooking",
+      "description": "I really like cooking, since I was little I always helped my mom in the kitchen and now I love it.",
+      "category": "Cooking",
+      "image": "../images/aboutme/cooking.webp"
       }
     ],
     "favoriteGames": [

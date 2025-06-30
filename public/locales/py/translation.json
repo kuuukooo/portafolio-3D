@@ -184,6 +184,13 @@
           "description": "Amoañetéma hai ha'e che mba'eporã. Aguerohoryvéte ahechauka che apytu'ũ ha che remiandu ñe'ẽ rupive.",
           "category": "Moheñóiva",
           "image": "../images/aboutme/escribiendo.webp"
+        },
+        {
+          "id": 4,
+          "title": "Tembi'u apo",
+          "description": "Che ahayhu heta tembi'u rembiapo, michĩ guive akóinte pytyvõ che sy tembi'u rokápe ha ko'ágã che ahayhu heta.",
+          "category": "Tembi'u",
+          "image": "../images/aboutme/cooking.webp"
         }
       ],
       "favoriteGames": [

@@ -10,26 +10,31 @@ import PersonalInterests from './sections/PersonalInterests'
 const Hero = lazy(() => import('./sections/Hero'))
 const ShowcaseSection = lazy(() => import('./sections/ShowcaseSection'))
 const ExperienceSection = lazy(() => import('./sections/ExperienceSection'))
+import { useLanguage } from './hooks/useLanguage'
 
-const App = () => (
-  <>
-    <Navbar />
+const App = () => {
+  useLanguage()
 
-    <Suspense fallback={<div className="h-screen flex items-center justify-center">⏳</div>}>
-      <Hero />
-    </Suspense>
+  return (
+    <>
+      <Navbar />
 
-    <Suspense fallback={null}>
-      <ShowcaseSection />
-      <FeatureCards />
-      <ExperienceSection />
-      <TechStack />
-      <PersonalInterests />
-      <Contact />
-      <Footer />
-    </Suspense>
-    <Translate />
-  </>
-)
+      <Suspense fallback={<div className="h-screen flex items-center justify-center">⏳</div>}>
+        <Hero />
+      </Suspense>
+
+      <Suspense fallback={null}>
+        <ShowcaseSection />
+        <FeatureCards />
+        <ExperienceSection />
+        <TechStack />
+        <PersonalInterests />
+        <Contact />
+        <Footer />
+      </Suspense>
+      <Translate />
+    </>
+  )
+}
 
 export default App
